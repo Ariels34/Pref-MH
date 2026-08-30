@@ -1,1 +1,1 @@
-# Pref-MH-Exact-MCMC-from-Preference-Voting
+# Pref-MH
