@@ -3,6 +3,7 @@
 ### Abstract
 
 Sampling from distributions conditioned on desired semantic properties is an emerging challenge in modern generative modeling. Metropolis--Hastings (MH) provides a principled route to conditional sampling, but requires access to exact pointwise target-density evaluations, which are not available in generative settings. Meanwhile, pairwise comparisons by humans or model “judges” are highly accessible and have proved valuable across diverse applications. 
+
 We introduce **Pref-MH**, a general exact MH sampler for judge-induced conditional distributions using only stochastic binary pairwise comparisons.
 Our key observation is that the MH unnormalized density ratio matches the preference odds of the Bradley--Terry (BT) choice model. The central challenge is that while MH requires precise ratio computation, BT judges provide only sampled binary feedback.
 To this end, we develop a valid accept/reject rule whose resulting Markov chain provably converges to the target distribution. 
